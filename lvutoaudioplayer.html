@@ -1,0 +1,45 @@
+<!DOCTYPE
+<<!DOCTYPE html>
+<html>
+<head>
+    <script>
+         var player;
+            window.onload = function () {
+                player = document.getElementById("sound");
+                document.getElementById("btnPlay").addEventListener("click",
+                    playMusic, false);
+                document.getElementById("btnPause").addEventListener("click",
+                    pauseMusic, false);
+                document.getElementById("btnStop").addEventListener("click",
+                    stopMusic, false);
+            }
+            function playMusic() {
+                player.play();
+            }
+            function pauseMusic() {
+                player.pause();
+            }
+            function stopMusic() {
+                player.pause();
+                player.currentTime = 0;
+            }
+
+        </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thomas Mapfumo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <audio id="sound">
+
+        <source src="Slapdee%20ft%20Patoranking%20x%20Daev%20-%20LITUATION%20(Official%20Video).mp3" />
+
+    </audio>
+    <button id="btnPlay">Play</button>
+    <button id="btnPause">Pause</button>
+    <button id="btnStop">Stop</button>
+</body>
+</html>
